@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naruto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9f59b2dab5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="login-form hidden">
+      <h1 class="login-form__title">네놈! 이름이 뭐냐!</h1>
+      <form id="login-form" >
+        <input class="login-form__input" required minlength="3" maxlength='15' type="text" />
+      </form>
+    </div>
+    <h1 id="title" class="hidden"></h1>
+    <article class="article hidden">
+      <header class="article__header">
+        <div class="status-bar">
+          <div class="month">September</div>
+        </div>
+        <div class="article__content">
+          <h3 class="month-number">12</h3>
+          <span
+            >
+            <span class="day">Thursday</span>
+            <span id="clock">00:00:00</h2>
+          </span>
+        </div>
+        <div class="weather" id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <div class="quote" id="quote">
+        <span></span>
+        <span class="fadeEffect effect"></span>
+      </div>
+      <div class="logout"><i class="fa-solid fa-plug-circle-xmark fa-xl"></i></div>
+
+    </article>
+<div class="middle hidden">
+  <div class="message-row">
+    <div class="image-container">
+      <img class='man change-bg' src="img/나루토.jpg">
+      <div class="ring"></div>
+    </div>
+    <span class="message-bubble message-bubble--upside">
+      배경을 바꿔줘!
+    </span>
+  </div>
+
+  <div class="message-row">
+    <div class="image-container">
+      <img class='girl change-sentence' src="img/사스케.jpg">
+      <div class="ring"></div>
+    </div>
+    <span class="message-bubble message-bubble--downside">
+      대사를 바꿔줘!
+    </span>
+  </div>
+  <div>
+    <audio controls volume="0.5">
+      <source src="/img/나루토실루엣.mp3" type="audio/mp3">
+    </audio>
+  </div>
+</div>
+<main class="main hidden">
+      <header class="main__header">
+        <div>지켜야 할 것들이라니깐 !</div>
+      </header>
+
+      <div class="todo">
+        
+        <div class="todo-list">
+          <ul id="todo-list"></ul>
+        </div>
+        <form id="todo-form">
+          <input class="todo__input" type="text" required />
+        </form>
+      </div>
+    </main>
+
+    <script src="js/content.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    
+  </body>
+</html>
